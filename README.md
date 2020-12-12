@@ -4,7 +4,21 @@ Dieses Tool dient zur Erstellung von Sharepics für Social-Media im Look and Fee
 
 ## 📱 Verwendung
 
+### Gehostete Version
+
 Die App steht unter [juso-sharepics.firlus.dev](https://juso-sharepics.firlus.dev) zur Verfügung.
+
+### Selbst betreiben
+
+Um die App funktionsfähig zu bauen, führe
+
+`npm i`
+
+gefolgt von
+
+`npm run build`
+
+aus. Die fertige App liegt unter `/dist`. Im Anschluss kann auch ein Docker-Container gebaut werden.
 
 ## 🖼️ Funktionsumfang
 
