@@ -1,0 +1,20 @@
+# WARNING: This is for my personal server with my reverse-proxy configuration. This probably won't be helpful for you.
+version: '3.3'
+services:
+  juso-sharepic-generator:
+    image: juso-sharepic-generator
+    restart: always
+    container_name: juso-sharepic-generator
+    networks:
+      - web
+    labels:
+      - 'traefik.enable=true' # <== Enable traefik to proxy this container
+      - 'traefik.http.routers.juso-sharepic-generator-web.rule=Host(`juso-sharepics.firlus.dev`)' # <== Your Domain Name goes here for the htt$
+      - 'traefik.http.routers.juso-sharepic-generator-web.entrypoints=web' # <== Defining the entrypoint for http, **ref: line 30
+      - 'traefik.http.routers.juso-sharepic-generator-web.middlewares=redirect@file' # <== This is a middleware to redirect to https
+      - 'traefik.http.routers.juso-sharepic-generator-secured.rule=Host(`juso-sharepics.firlus.dev`)' # <== Your Domain Name for the https rul$
+      - 'traefik.http.routers.juso-sharepic-generator-secured.entrypoints=web-secured' # <== Defining entrypoint for https, **ref: line 31
+      - 'traefik.http.routers.juso-sharepic-generator-secured.tls.certresolver=mytlschallenge' # <== Defining certsresolvers for https
+networks:
+  web:
+    external: true
