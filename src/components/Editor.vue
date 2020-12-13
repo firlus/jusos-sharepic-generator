@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-auto">
+      <div class="col-12 col-md-6 col-lg-4" id="canvas-container">
         <component :is="template.component" :contents="canvasProps"></component>
         <button
           class="btn btn-outline-primary mt-3 w-100"
@@ -21,7 +21,7 @@
         >
           Herunterladen
         </button>
-        <div class="mt-3">
+        <div class="my-3">
           ⚠️ Diese App unterstützt nur Chrome/Chromium und Firefox.
         </div>
       </div>
@@ -46,6 +46,7 @@
 import domtoimage from 'dom-to-image';
 import InputText from './InputText.vue';
 import Canvas2013Image from './Canvas2013Image.vue';
+import changeCanvasSize from '../utils/canvasSize';
 
 import templates from '../templates';
 
@@ -68,6 +69,9 @@ export default {
         controls: [],
       },
     };
+  },
+  mounted: function() {
+    changeCanvasSize();
   },
   created: function() {
     const templateId = this.$route.params.template;

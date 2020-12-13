@@ -7,6 +7,7 @@ import InputColor from './components/InputColor';
 import Editor from './components/Editor';
 import TemplateOverview from './components/TemplateOverview';
 import VueRouter from 'vue-router';
+import changeCanvasSize from './utils/canvasSize';
 
 Vue.component('canvas-2013-image', Canvas2013Image);
 Vue.component('canvas-2020-image', Canvas2020Image);
@@ -27,3 +28,8 @@ const router = new VueRouter({
 
 /* eslint-disable no-new */
 new Vue({ router }).$mount('#app');
+
+// Calculate canvas size on mobile
+
+window.onload = changeCanvasSize;
+window.onresize = changeCanvasSize;

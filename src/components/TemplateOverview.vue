@@ -13,7 +13,11 @@
       </div>
     </div>
     <div class="row">
-      <div v-for="(template, index) in templates" :key="index" class="col-4">
+      <div
+        v-for="(template, index) in templates"
+        :key="index"
+        class="col-6 col-lg-4"
+      >
         <router-link :to="`/editor/${template.component}`">
           <img
             class="img-fluid"
