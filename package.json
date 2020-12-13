@@ -1,6 +1,6 @@
 {
   "name": "juso-sharepic-generator",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Erstelle Sharepics für Social-Media aus verschiedenen Vorlagen im Juso-Style!",
   "main": "src/app.js",
   "scripts": {
