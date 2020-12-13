@@ -64,6 +64,7 @@ export default {
         hashtag: '',
         intro: '',
         themeColor: '',
+        backgroundMode: '',
       },
       template: {
         controls: [],

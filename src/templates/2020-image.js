@@ -7,9 +7,30 @@ export default {
       type: 'input-file',
       identifier: 'background',
       title: '🖼️ Hintergrund',
-      description: 'Bitte achte darauf, dass dein Bild quadratisch ist!',
+      description:
+        'Bitte achte darauf, dass dein Bild eine Hohe Auflösung hat! (2048x2048 ist optimal. Weniger als 1024x1024 wird später deutlich bemerkbar sein.)',
       default: 'standard-background.jpg',
       settings: {},
+    },
+    {
+      type: 'input-color',
+      identifier: 'backgroundMode',
+      title: 'Hintergrund (Position)',
+      description:
+        'Ändere die Anzeigeposition des Hintergrunds, wenn dieser das Bild nicht ganz bedeckt.',
+      default: 'w-100',
+      settings: {
+        colors: [
+          {
+            name: 'An Breite anpassen',
+            code: 'w-100',
+          },
+          {
+            name: 'An Höhe anpassen',
+            code: 'h-100',
+          },
+        ],
+      },
     },
     {
       type: 'input-color',

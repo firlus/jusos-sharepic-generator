@@ -1,6 +1,9 @@
 <template>
   <div class="sharepic-canvas canvas-2013-image" id="sharepic-canvas">
-    <img class="background w-100" :src="contents.background" />
+    <img
+      :class="`background ${contents.backgroundMode}`"
+      :src="contents.background"
+    />
     <div class="title">{{ contents.title }}</div>
     <div class="subtitle">{{ contents.subtitle }}</div>
     <div class="text-background"></div>

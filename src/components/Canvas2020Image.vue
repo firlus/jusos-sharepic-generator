@@ -1,6 +1,9 @@
 <template>
   <div class="sharepic-canvas canvas-2020-image" id="sharepic-canvas">
-    <img class="background w-100" :src="contents.background" />
+    <img
+      :class="`background ${contents.backgroundMode}`"
+      :src="contents.background"
+    />
     <div class="footer" :style="{ backgroundColor: contents.themeColor }"></div>
     <div class="hashtag" :style="{ color: textColor }">
       {{ contents.hashtag }}
