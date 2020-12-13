@@ -47,8 +47,6 @@ export default {
 <style lang="scss">
 $white: #ffffff;
 
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,700&display=swap');
-
 * {
   padding: 0;
   margin: 0;
