@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Michael\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add VueRouter
+  C:\Program Files\nodejs\node.exe C:\Users\Michael\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add domtoimage
 
 PATH: 
-  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Programme\Go\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Google\Google Apps Sync\;C:\Program Files\Google\Google Apps Migration\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\protoc-3.14.0-win64\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Elm\0.19.1\bin;C:\Users\Michael\AppData\Roaming\local\bin;C:\Users\Michael\AppData\Local\Microsoft\WindowsApps;C:\Users\Michael\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Michael\AppData\Roaming\npm;C:\Users\Michael\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.1\bin;C:\tools\msys64;C:\Users\Michael\go\bin;C:\Users\Michael\.deno\bin;C:\Program Files\JetBrains\DataGrip 2020.2.3\bin;;C:\Users\Michael\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\protoc-3.14.0-win64\bin;
+  C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;D:\codebase\personal\juso-sharepic-generator\node_modules\.bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Programme\Go\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Google\Google Apps Sync\;C:\Program Files\Google\Google Apps Migration\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\protoc-3.14.0-win64\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Elm\0.19.1\bin;C:\Users\Michael\AppData\Roaming\local\bin;C:\Users\Michael\AppData\Local\Microsoft\WindowsApps;C:\Users\Michael\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Michael\AppData\Roaming\npm;C:\Users\Michael\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.1\bin;C:\tools\msys64;C:\Users\Michael\go\bin;C:\Users\Michael\.deno\bin;C:\Program Files\JetBrains\DataGrip 2020.2.3\bin;;C:\Users\Michael\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\protoc-3.14.0-win64\bin;
 
 Yarn version: 
   1.22.10
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/VueRouter: Not found
+  Error: https://registry.npmjs.org/domtoimage: Not found
       at Request.params.callback [as _callback] (C:\Users\Michael\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\Michael\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:315:20)
@@ -46,6 +46,9 @@ npm manifest:
     "bugs": {
       "url": "https://github.com/firlus/jusos-sharepic-generator/issues"
     },
+    "alias": {
+      "vue": "./node_modules/vue/dist/vue.esm.js"
+    },
     "homepage": "https://github.com/firlus/jusos-sharepic-generator#readme",
     "devDependencies": {
       "@vue/component-compiler-utils": "^3.2.0",
@@ -60,7 +63,8 @@ npm manifest:
       "html2canvas": "^1.0.0-rc.7",
       "templates": "^1.2.9",
       "vue": "^2.6.12",
-      "vue-hot-reload-api": "^2.3.4"
+      "vue-hot-reload-api": "^2.3.4",
+      "vue-router": "^3.4.9"
     }
   }
 
@@ -6435,6 +6439,11 @@ Lockfile:
     version "2.3.4"
     resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
     integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+  
+  vue-router@^3.4.9:
+    version "3.4.9"
+    resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.9.tgz#c016f42030ae2932f14e4748b39a1d9a0e250e66"
+    integrity sha512-CGAKWN44RqXW06oC+u4mPgHLQQi2t6vLD/JbGRDAXm0YpMv0bgpKuU5bBd7AvMgfTz9kXVRIWKHqRwGEb8xFkA==
   
   vue-template-compiler@^2.6.12:
     version "2.6.12"
