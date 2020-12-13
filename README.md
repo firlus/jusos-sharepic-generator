@@ -6,7 +6,7 @@ Dieses Tool dient zur Erstellung von Sharepics für Social-Media im Look and Fee
 
 ### Gehostete Version
 
-Die App steht unter [juso-sharepics.firlus.dev](https://juso-sharepics.firlus.dev) zur Verfügung.
+Die App steht unter [jusos.pics](https://jusos.pics) zur Verfügung.
 
 ### Selbst betreiben
 
