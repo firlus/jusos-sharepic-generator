@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div>
     <div class="row mb-3">
       <div class="col">
         <h1>🌹 Juso-Sharepic-Generator</h1>
@@ -8,7 +8,7 @@
     <div class="row mb-5">
       <div class="col">
         <h2 class="text-muted">
-          Wähle eine Vorlage aus den gezeigten Designs aus
+          Wähle eine Vorlage aus den gezeigten Designs aus!
         </h2>
       </div>
     </div>

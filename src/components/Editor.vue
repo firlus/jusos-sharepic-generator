@@ -1,38 +1,42 @@
 <template>
   <div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col"><h1>Juso-Sharepic-Generator</h1></div>
+    <div class="row mb-3">
+      <div class="col">
+        <h1>🌹 Juso-Sharepic-Generator</h1>
       </div>
-      <div class="row">
-        <div class="col-auto">
-          <component
-            :is="template.component"
-            :contents="canvasProps"
-          ></component>
-          <button
-            class="btn btn-outline-primary mt-3 w-100"
-            v-on:click="downloadImage"
-          >
-            Herunterladen
-          </button>
-          <div class="mt-3">
-            ⚠️ Diese App unterstützt nur Chrome/Chromium und Firefox.
-          </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col">
+        <h2 class="text-muted">
+          Passe das Design mit deinen Inhalten an!
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-auto">
+        <component :is="template.component" :contents="canvasProps"></component>
+        <button
+          class="btn btn-outline-primary mt-3 w-100"
+          v-on:click="downloadImage"
+        >
+          Herunterladen
+        </button>
+        <div class="mt-3">
+          ⚠️ Diese App unterstützt nur Chrome/Chromium und Firefox.
         </div>
-        <div class="col">
-          <component
-            v-for="(control, index) in template.controls"
-            :is="control.type"
-            :key="index"
-            :title="control.title"
-            :description="control.description"
-            :settings="control.settings"
-            :identifier="control.identifier"
-            :default="control.default"
-            v-on:update-settings="changeCanvas"
-          ></component>
-        </div>
+      </div>
+      <div class="col">
+        <component
+          v-for="(control, index) in template.controls"
+          :is="control.type"
+          :key="index"
+          :title="control.title"
+          :description="control.description"
+          :settings="control.settings"
+          :identifier="control.identifier"
+          :default="control.default"
+          v-on:update-settings="changeCanvas"
+        ></component>
       </div>
     </div>
   </div>
