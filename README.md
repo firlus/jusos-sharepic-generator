@@ -11,22 +11,16 @@ Die App steht unter [juso-sharepics.firlus.dev](https://juso-sharepics.firlus.de
 ### Selbst betreiben
 
 Um die App funktionsfähig zu bauen, führe
-
 `npm i`
-
 gefolgt von
-
 `npm run build`
+aus. Die fertige App liegt unter `/dist`.
 
-aus. Die fertige App liegt unter `/dist`. Im Anschluss kann auch ein Docker-Container gebaut werden.
+Die App kann auch als Docker-Container gebaut werden.
 
 ## 🖼️ Funktionsumfang
 
-Momentan gibt es ein Template, das generiert werden kann. Dieses orientiert sich am [Juso-Corporate-Design 2013](https://www.jusos.de/content/uploads/2017/07/cd-manual_jusos-1.pdf).
-
-![Beispielhaftes Juso-Sharepic im Design von 2013.](docs/2013-demo.png)
-
-Folgende Komponenten lassen sich einstellen: Titel und Untertitel (links unten), Text (rechts oben), Hintergrundbild und Text unter dem Logo.
+Wähle erst eine Designvorlage aus. Danach hast du die Möglichkeit, Text, Bilder und Farben anzupassen. Die fertigen Sharepics können als Bilddatei heruntergeladen werden und anschließend auf Social-Media verwendet werden.
 
 ## ✏️ Beitragen
 
