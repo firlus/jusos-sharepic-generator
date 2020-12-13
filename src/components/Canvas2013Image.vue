@@ -30,7 +30,10 @@ $secondary-transparent-red: rgba(227, 5, 19, 0.67);
 
 $white: #ffffff;
 
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,700&display=swap');
+@font-face {
+  font-family: 'Vollkorn Bold Italic';
+  src: url(../assets/VollkornBoldItalic.ttf);
+}
 
 * {
   padding: 0;
@@ -55,7 +58,7 @@ $white: #ffffff;
     font-size: 24px;
     display: inline-block;
     background-color: $primary-red;
-    font-family: 'Vollkorn';
+    font-family: 'Vollkorn Bold Italic';
     color: $white;
     transform: skewY(-6deg);
     padding: 8px 16px;
@@ -71,7 +74,7 @@ $white: #ffffff;
     font-size: 18px;
     display: inline-block;
     background-color: $secondary-green;
-    font-family: 'Vollkorn';
+    font-family: 'Vollkorn Bold Italic';
     color: $white;
     transform: skewY(-6deg);
     padding: 6px 16px;
