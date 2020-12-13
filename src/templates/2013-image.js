@@ -5,7 +5,7 @@ export default {
     {
       type: 'input-file',
       identifier: 'background',
-      title: 'Hintergrund',
+      title: '🖼️ Hintergrund',
       description: 'Bitte achte darauf, dass dein Bild quadratisch ist!',
       default:
         'https://github.com/firlus/jusos-sharepic-generator/blob/master/src/assets/standard-background.jpg?raw=true',
@@ -14,7 +14,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'title',
-      title: 'Titel',
+      title: '🗨️ Titel',
       description: 'Text im roten Rhomboid links unten',
       default: 'Völker hört die Signale!',
       settings: {
@@ -24,7 +24,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'subtitle',
-      title: 'Untertitel',
+      title: '📃 Untertitel',
       description: 'Text im grünen Rhomboid links unten',
       default: 'Auf zum letzten Gefecht!',
       settings: {
@@ -34,7 +34,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'text',
-      title: 'Inhalt',
+      title: '📰 Inhalt',
       description: 'Text im roten Rhomboid rechts oben',
       default: 'Hoch die Internationale\nSolidarität!',
       settings: {
@@ -44,7 +44,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'org',
-      title: 'Logo',
+      title: '🌹 Logo',
       description: 'Gib den Namen deiner Organisation (Bezirk, UB, etc.) ein.',
       default: 'Freising',
       settings: {
@@ -54,7 +54,7 @@ export default {
     {
       type: 'input-color',
       identifier: 'orgTextColor',
-      title: 'Logo (Textfarbe)',
+      title: '🌈 Logo (Textfarbe)',
       description:
         'Wähle weiß bei einem dunklen Hintergrundbild und schwarz bei einem hellen Hintergrundbild.',
       default: '#000000',
