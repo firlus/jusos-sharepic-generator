@@ -16,7 +16,7 @@
       <div
         v-for="(template, index) in templates"
         :key="index"
-        class="col-6 col-lg-4"
+        class="col-6 col-lg-4 text-center"
       >
         <router-link :to="`/editor/${template.component}`">
           <img
@@ -25,6 +25,7 @@
             alt="Beispiel-Sharepic im Juso-Design"
           />
         </router-link>
+        <h3 class="h5 mt-2 text-muted">{{ template.displayName }}</h3>
       </div>
     </div>
   </div>
