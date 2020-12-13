@@ -28,6 +28,9 @@
           >
             Herunterladen
           </button>
+          <div class="mt-3">
+            ⚠️ Diese App unterstützt nur Chrome/Chromium und Firefox.
+          </div>
         </div>
         <div class="col">
           <div class="card mb-3">
