@@ -9,10 +9,10 @@ services:
       - web
     labels:
       - 'traefik.enable=true' # <== Enable traefik to proxy this container
-      - 'traefik.http.routers.juso-sharepic-generator-web.rule=Host(`juso-sharepics.firlus.dev`)' # <== Your Domain Name goes here for the htt$
+      - 'traefik.http.routers.juso-sharepic-generator-web.rule=Host(`jusos.pics`, `www.jusos.pics`)' # <== Your Domain Name goes here for the htt$
       - 'traefik.http.routers.juso-sharepic-generator-web.entrypoints=web' # <== Defining the entrypoint for http, **ref: line 30
       - 'traefik.http.routers.juso-sharepic-generator-web.middlewares=redirect@file' # <== This is a middleware to redirect to https
-      - 'traefik.http.routers.juso-sharepic-generator-secured.rule=Host(`juso-sharepics.firlus.dev`)' # <== Your Domain Name for the https rul$
+      - 'traefik.http.routers.juso-sharepic-generator-secured.rule=Host(`jusos.pics`, `www.jusos.pics`)' # <== Your Domain Name for the https rul$
       - 'traefik.http.routers.juso-sharepic-generator-secured.entrypoints=web-secured' # <== Defining entrypoint for https, **ref: line 31
       - 'traefik.http.routers.juso-sharepic-generator-secured.tls.certresolver=mytlschallenge' # <== Defining certsresolvers for https
 networks:
