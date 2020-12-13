@@ -1,6 +1,7 @@
 export default {
   component: 'canvas-2013-image',
   demoImage: '2013-image.png',
+  displayName: 'Style 2013: Bildlastig',
   controls: [
     {
       type: 'input-file',

@@ -1,6 +1,7 @@
 export default {
   component: 'canvas-2020-image',
   demoImage: '2020-demand-image.png',
+  displayName: 'Style 2020: Forderung mit Bild',
   controls: [
     {
       type: 'input-file',
