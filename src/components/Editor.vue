@@ -82,7 +82,14 @@ export default {
     },
     downloadImage: function() {
       domtoimage
-        .toPng(document.getElementById('sharepic-canvas'))
+        .toPng(document.getElementById('sharepic-canvas'), {
+          width: 2048,
+          height: 2048,
+          style: {
+            transform: 'scale(4, 4)',
+            'transform-origin': 'top left',
+          },
+        })
         .then((url) => {
           const a = document.createElement('a');
           a.href = url;
