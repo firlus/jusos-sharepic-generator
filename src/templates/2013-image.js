@@ -7,8 +7,7 @@ export default {
       identifier: 'background',
       title: '🖼️ Hintergrund',
       description: 'Bitte achte darauf, dass dein Bild quadratisch ist!',
-      default:
-        'https://github.com/firlus/jusos-sharepic-generator/blob/master/src/assets/standard-background.jpg?raw=true',
+      default: 'standard-background.jpg',
       settings: {},
     },
     {

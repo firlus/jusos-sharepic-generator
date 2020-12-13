@@ -21,7 +21,10 @@
     "vue": "./node_modules/vue/dist/vue.esm.js"
   },
   "staticFiles": {
-    "staticPath": "src/assets/demo",
+    "staticPath": [
+      "src/assets/demo",
+      "src/assets/designs"
+    ],
     "watcherGlob": "**"
   },
   "homepage": "https://github.com/firlus/jusos-sharepic-generator#readme",
