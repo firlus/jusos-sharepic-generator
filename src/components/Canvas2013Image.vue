@@ -1,5 +1,5 @@
 <template>
-  <div class="sharepic-canvas" id="sharepic-canvas">
+  <div class="sharepic-canvas canvas-2013-image" id="sharepic-canvas">
     <img class="background w-100" :src="contents.background" />
     <div class="title">{{ contents.title }}</div>
     <div class="subtitle">{{ contents.subtitle }}</div>
@@ -46,77 +46,79 @@ $white: #ffffff;
   background-size: cover;
 }
 
-.title {
-  white-space: pre;
-  position: absolute;
-  bottom: 64px;
-  left: 32px;
-  font-size: 24px;
-  display: inline-block;
-  background-color: $primary-red;
-  font-family: 'Vollkorn';
-  color: $white;
-  transform: skewY(-6deg);
-  padding: 8px 16px;
-  box-shadow: $primary-light-mint -10px 10px;
-  transform-origin: 0% 100%;
-}
+.canvas-2013-image {
+  .title {
+    white-space: pre;
+    position: absolute;
+    bottom: 64px;
+    left: 32px;
+    font-size: 24px;
+    display: inline-block;
+    background-color: $primary-red;
+    font-family: 'Vollkorn';
+    color: $white;
+    transform: skewY(-6deg);
+    padding: 8px 16px;
+    box-shadow: $primary-light-mint -10px 10px;
+    transform-origin: 0% 100%;
+  }
 
-.subtitle {
-  white-space: pre;
-  position: absolute;
-  bottom: 36px;
-  left: 48px;
-  font-size: 18px;
-  display: inline-block;
-  background-color: $secondary-green;
-  font-family: 'Vollkorn';
-  color: $white;
-  transform: skewY(-6deg);
-  padding: 6px 16px;
-  transform-origin: 0% 100%;
-}
+  .subtitle {
+    white-space: pre;
+    position: absolute;
+    bottom: 36px;
+    left: 48px;
+    font-size: 18px;
+    display: inline-block;
+    background-color: $secondary-green;
+    font-family: 'Vollkorn';
+    color: $white;
+    transform: skewY(-6deg);
+    padding: 6px 16px;
+    transform-origin: 0% 100%;
+  }
 
-.text-background {
-  background-color: $secondary-transparent-red;
-  position: absolute;
-  width: 50%;
-  height: 192px;
-  right: 0;
-  top: 64px;
-  transform: skewY(-6deg);
-}
+  .text-background {
+    background-color: $secondary-transparent-red;
+    position: absolute;
+    width: 50%;
+    height: 192px;
+    right: 0;
+    top: 64px;
+    transform: skewY(-6deg);
+  }
 
-.text {
-  white-space: pre;
-  position: absolute;
-  right: 0;
-  top: 78px;
-  text-align: center;
-  width: 50%;
-  height: 164px;
-  color: $white;
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-style: italic;
-  text-decoration: underline;
-  font-size: 20px;
-}
+  .text {
+    white-space: pre;
+    position: absolute;
+    right: 0;
+    top: 78px;
+    text-align: center;
+    width: 50%;
+    height: 164px;
+    color: $white;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 20px;
+  }
 
-.org-name {
-  position: absolute;
-  right: 24px;
-  bottom: 6px;
-  font-family: 'Open Sans';
-  transform: skewY(-6deg);
-  font-weight: 700;
-  font-style: italic;
-}
+  .org-name {
+    position: absolute;
+    right: 24px;
+    bottom: 6px;
+    font-family: 'Open Sans';
+    transform: skewY(-6deg);
+    font-weight: 700;
+    font-style: italic;
+  }
 
-.logo {
-  position: absolute;
-  right: 16px;
-  bottom: 24px;
-  width: 100px;
+  .logo {
+    position: absolute;
+    right: 16px;
+    bottom: 24px;
+    width: 100px;
+  }
 }
 </style>

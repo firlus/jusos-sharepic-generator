@@ -6,7 +6,10 @@
       </div>
       <div class="row">
         <div class="col-auto">
-          <canvas-2013-image :contents="canvasProps"></canvas-2013-image>
+          <component
+            :is="template.component"
+            :contents="canvasProps"
+          ></component>
           <button
             class="btn btn-outline-primary mt-3 w-100"
             v-on:click="downloadImage"
@@ -53,6 +56,9 @@ export default {
         org: '',
         background: '',
         orgTextColor: '',
+        hashtag: '',
+        intro: '',
+        themeColor: '',
       },
       template: {
         controls: [],
@@ -64,6 +70,7 @@ export default {
     this.template = templates.filter(
       (template) => template.component === templateId,
     )[0];
+    console.log(this.template);
   },
   methods: {
     changeCanvas: function(event) {
