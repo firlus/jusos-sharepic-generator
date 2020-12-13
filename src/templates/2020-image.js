@@ -52,7 +52,7 @@ export default {
       identifier: 'intro',
       title: '🗨️ Einleitung',
       description: 'Einleitender Satz über dem Inhalt',
-      default: 'An die schwarz-grüne Landesregierung:',
+      default: 'Hier kommt eine Einführung oder ein Titel',
       settings: {
         rows: 1,
       },
@@ -72,7 +72,8 @@ export default {
       identifier: 'text',
       title: '📰 Inhalt',
       description: 'Text oben rechts',
-      default: 'Hoch die Internationale\nSolidarität!',
+      default:
+        'Hier kann man einen\nkurzen Inhalt oder  eine\nForderung formulieren.',
       settings: {
         rows: 5,
       },
