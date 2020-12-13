@@ -39,7 +39,6 @@
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
     "dom-to-image": "^2.6.0",
-    "html2canvas": "^1.0.0-rc.7",
     "templates": "^1.2.9",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
