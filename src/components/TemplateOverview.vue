@@ -1,10 +1,26 @@
 <template>
-  <div class="container">
+  <div class="container mt-5">
+    <div class="row mb-3">
+      <div class="col">
+        <h1>🌹 Juso-Sharepic-Generator</h1>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col">
+        <h2 class="text-muted">
+          Wähle eine Vorlage aus den gezeigten Designs aus
+        </h2>
+      </div>
+    </div>
     <div class="row">
       <div v-for="(template, index) in templates" :key="index" class="col-4">
-        <router-link :to="`/editor/${template.component}`">{{
-          template.component
-        }}</router-link>
+        <router-link :to="`/editor/${template.component}`">
+          <img
+            class="img-fluid"
+            :src="template.demoImage"
+            alt="Beispiel-Sharepic im Juso-Design"
+          />
+        </router-link>
       </div>
     </div>
   </div>

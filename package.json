@@ -20,10 +20,15 @@
   "alias": {
     "vue": "./node_modules/vue/dist/vue.esm.js"
   },
+  "staticFiles": {
+    "staticPath": "src/assets/demo",
+    "watcherGlob": "**"
+  },
   "homepage": "https://github.com/firlus/jusos-sharepic-generator#readme",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
     "parcel": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "picomatch": "^2.2.2",
     "sass": "^1.30.0",
     "vue-template-compiler": "^2.6.12"

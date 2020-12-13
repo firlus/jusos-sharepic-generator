@@ -1,10 +1,11 @@
 export default {
   component: 'canvas-2020-image',
+  demoImage: '2020-demand-image.png',
   controls: [
     {
       type: 'input-file',
       identifier: 'background',
-      title: 'Hintergrund',
+      title: '🖼️ Hintergrund',
       description: 'Bitte achte darauf, dass dein Bild quadratisch ist!',
       default:
         'https://github.com/firlus/jusos-sharepic-generator/blob/master/src/assets/standard-background.jpg?raw=true',
@@ -13,7 +14,7 @@ export default {
     {
       type: 'input-color',
       identifier: 'themeColor',
-      title: 'Farbschema',
+      title: '🌈 Farbschema',
       description:
         'Die Textfarbe passt sich automatisch an die gewählte Akzentfarbe an, um einen barrierefreien Kontrast sicherzustellen.',
       default: '#ff7356',
@@ -49,8 +50,8 @@ export default {
     {
       type: 'input-text',
       identifier: 'intro',
-      title: 'Titel',
-      description: 'Einleitender Satz über dem inhalt',
+      title: '🗨️ Einleitung',
+      description: 'Einleitender Satz über dem Inhalt',
       default: 'An die schwarz-grüne Landesregierung:',
       settings: {
         rows: 1,
@@ -59,7 +60,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'hashtag',
-      title: 'Hashtag',
+      title: '#️⃣ Hashtag',
       description: 'Hashtag oder Schlagwort in der Fußzeile',
       default: '#Jusos',
       settings: {
@@ -69,7 +70,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'text',
-      title: 'Inhalt',
+      title: '📰 Inhalt',
       description: 'Text oben rechts',
       default: 'Hoch die Internationale\nSolidarität!',
       settings: {
@@ -79,7 +80,7 @@ export default {
     {
       type: 'input-text',
       identifier: 'org',
-      title: 'Logo',
+      title: '🌹 Logo',
       description: 'Gib den Namen deiner Organisation (Bezirk, UB, etc.) ein.',
       default: 'Freising',
       settings: {

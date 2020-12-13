@@ -1,5 +1,6 @@
 export default {
   component: 'canvas-2013-image',
+  demoImage: '2013-image.png',
   controls: [
     {
       type: 'input-file',
