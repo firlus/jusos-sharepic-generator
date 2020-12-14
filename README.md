@@ -32,4 +32,4 @@ Um mich zu unterstützen und mir dabei zu helfen, meine laufenden Kosten (Server
 
 ## 📜 Lizenz
 
-Die Software ist lizensiert unter der Copyleft-Lizenz [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.de.html). Jegliche Weiterverwendung des Codes muss ebenfalls unter dieser Lizenz veröffentlicht werden. Kommerzielle Nutzung ist untersagt.
+Die Software ist lizensiert unter der Copyleft-Lizenz [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.de.html). Jegliche Weiterverwendung des Codes muss ebenfalls unter dieser Lizenz veröffentlicht werden. 
