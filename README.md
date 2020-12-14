@@ -16,7 +16,7 @@ gefolgt von
 `npm run build`
 aus. Die fertige App liegt unter `/dist`.
 
-Die App kann auch als Docker-Container gebaut werden.
+Es stehen auch fertige Docker-Images im [Docker Hub](https://hub.docker.com/repository/docker/firlus/jusos-sharepic-generator) bereit. Die aktuelle Version kann mit `docker run -p 80:80 firlus/jusos-sharepic-generator` heruntergeladen und gestartet werden.
 
 ## 🖼️ Funktionsumfang
 
