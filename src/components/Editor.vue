@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div
+      class="spinner d-flex justify justify-content-center align-items-center"
+      v-if="loading"
+    >
+      <div class="spinner-border text-light" role="status"></div>
+    </div>
     <div class="row mb-3">
       <div class="col">
         <h1>🌹 Juso-Sharepic-Generator</h1>
@@ -54,6 +60,7 @@ export default {
   components: { InputText, Canvas2013Image },
   data: () => {
     return {
+      loading: false,
       canvasProps: {
         title: '',
         subtitle: '',
@@ -86,6 +93,7 @@ export default {
       this.canvasProps[event.identifier] = event.value;
     },
     downloadImage: function() {
+      this.loading = true;
       domtoimage
         .toPng(document.getElementById('sharepic-canvas'), {
           width: 2048,
@@ -100,10 +108,21 @@ export default {
           a.href = url;
           a.download = 'sharepic.png';
           a.click();
+          this.loading = false;
         });
     },
   },
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.7);
+  z-index: 100;
+}
+</style>
