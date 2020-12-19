@@ -16,7 +16,7 @@ gefolgt von
 `npm run build`
 aus. Die fertige App liegt unter `/dist`.
 
-Die App kann auch als Docker-Container gebaut werden.
+Es stehen auch fertige Docker-Images im [Docker Hub](https://hub.docker.com/repository/docker/firlus/jusos-sharepic-generator) bereit. Die aktuelle Version kann mit `docker run -p 80:80 firlus/jusos-sharepic-generator` heruntergeladen und gestartet werden.
 
 ## 🖼️ Funktionsumfang
 
@@ -32,4 +32,4 @@ Um mich zu unterstützen und mir dabei zu helfen, meine laufenden Kosten (Server
 
 ## 📜 Lizenz
 
-Die Software ist lizensiert unter der Copyleft-Lizenz [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.de.html). Jegliche Weiterverwendung des Codes muss ebenfalls unter dieser Lizenz veröffentlicht werden. Kommerzielle Nutzung ist untersagt.
+Die Software ist lizensiert unter der Copyleft-Lizenz [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.de.html). Jegliche Weiterverwendung des Codes muss ebenfalls unter dieser Lizenz veröffentlicht werden. 
