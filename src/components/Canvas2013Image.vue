@@ -38,6 +38,11 @@ $white: #ffffff;
   src: url(../assets/VollkornBoldItalic.ttf);
 }
 
+@font-face {
+  font-family: 'Open Sans Bold Italic';
+  src: url(../assets/OpenSansBoldItalic.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -103,7 +108,7 @@ $white: #ffffff;
     width: 50%;
     height: 164px;
     color: $white;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Bold Italic';
     font-weight: 700;
     font-style: italic;
     text-decoration: underline;
@@ -114,7 +119,7 @@ $white: #ffffff;
     position: absolute;
     right: 24px;
     bottom: 6px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Bold Italic';
     transform: skewY(-6deg);
     font-weight: 700;
     font-style: italic;
